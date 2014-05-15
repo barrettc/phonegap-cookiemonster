@@ -15,6 +15,16 @@
         <clobbers target="cookieMonster" />
     </js-module>
     
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="CookieMonster">
+                <param name="ios-package" value="CDVCookieMonster"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVCookieMonster.h" />
+        <source-file src="src/ios/CDVCookieMonster.m" />                      
+    </platform>
     
     <!-- android -->
     <platform name="android">
