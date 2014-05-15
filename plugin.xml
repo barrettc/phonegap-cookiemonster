@@ -34,6 +34,6 @@
             </feature>
         </config-file>
  
-        <source-file src="src/android/com/phonegap/plugins/cookiemonster/CookieMonster.java" target-dir="src/com/phonegap/plugins/cookieMonster" />      
+        <source-file src="src/android/com/phonegap/plugins/cookiemonster/CookieMonster.java" target-dir="src/com/phonegap/plugins/cookiemonster" />      
     </platform>          
 </plugin>
