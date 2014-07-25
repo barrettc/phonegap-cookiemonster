@@ -8,7 +8,9 @@ A Phonegap plugin to return a cookie value for a given URL and cookie name. This
 * iOS
 
 ## Installing
+
 Install with Phonegap CLI
+
     $ phonegap local plugin add https://github.com/barrettc/phonegap-cookiemonster.git
 
 ## Usage
