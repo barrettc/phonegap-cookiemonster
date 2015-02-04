@@ -9,15 +9,15 @@ import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.CookieStore;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.cookie.Cookie;
-import org.apache.http.impl.client.AbstractHttpClient;
 import org.apache.http.impl.client.DefaultHttpClient;
 
 public class Utils {
+  
+  private Utils(){}
 
-  protected static AbstractHttpClient client;
 
   public static String getCookie(final String url, final String cookieName) {
-    client = getClient();
+    DefaultHttpClient client = new DefaultHttpClient();
     HttpGet request = new HttpGet(url);
     try {
       client.execute(request);
@@ -39,12 +39,6 @@ public class Utils {
     return cookieValue;
   }
 
-  private static AbstractHttpClient getClient() {
-    if(client== null){
-      client = new DefaultHttpClient();
-    }
-    return client;
-  }
 
   public static String getSession(String url) {
     String encoded = getCookie(url, "connect.sid");
