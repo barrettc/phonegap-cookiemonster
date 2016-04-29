@@ -1,0 +1,18 @@
+{
+    "version": "0.1.2",
+    "name": "com.phonegap.plugins.cookiemonster",
+    "cordova_name": "CookieMonster",
+    "description": "Return cookie value for a given URL and cookie name. This is essentially a workaround for cross domain request issues using XHR.",
+    "license": "MIT",
+    "platforms": [
+        "ios",
+        "android",
+        "browser"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.0.0"
+        }
+    ]
+}
