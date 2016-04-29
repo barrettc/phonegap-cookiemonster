@@ -2,7 +2,7 @@
  
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
            id="com.phonegap.plugins.cookiemonster"
-      version="0.1.1">
+      version="0.1.2">
     <name>CookieMonster</name>
     <description>Return cookie value for a given URL and cookie name. This is essentially a workaround for cross domain request issues using XHR.</description>
     <license>MIT</license>
@@ -40,5 +40,11 @@
  
         <source-file src="src/android/com/phonegap/plugins/cookiemonster/CookieMonster.java" target-dir="src/com/phonegap/plugins/cookiemonster" />  
         <source-file src="src/android/com/phonegap/plugins/cookiemonster/Utils.java" target-dir="src/com/phonegap/plugins/cookiemonster" />      
-    </platform>          
+    </platform>  
+    <!-- browser -->
+    <platform name="browser">
+      <js-module src="src/browser/cookieMonsterProxy.js" name="cookieMonsterProxy">
+        <runs />
+      </js-module>
+    </platform>        
 </plugin>
